@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InboxListActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingTop="56dp"
+        tools:listitem="@layout/item_inbox"/>
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:floatingSearch_dismissOnOutsideTouch="true"
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_dimBackground="false"
+        app:floatingSearch_close_search_on_keyboard_dismiss="false"
+        app:floatingSearch_leftActionMode="showHamburger"/>
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
